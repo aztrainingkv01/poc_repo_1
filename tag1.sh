@@ -21,6 +21,9 @@ echo "VNUM3 $VNUM3"
 # Check for #major or #minor in commit message and increment the relevant version number
 MAJOR=`git log --format=%B -n 1 HEAD | grep '#major'`
 MINOR=`git log --format=%B -n 1 HEAD | grep '#minor'`
+echo "MAJOR --> $MAJOR"
+echo "MINOR --> $MINOR"
+echo "******************"
 
 if [ "$MAJOR" ]; then
     echo "Update major version"
