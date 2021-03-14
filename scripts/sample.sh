@@ -1,1 +1,1 @@
-echo 'From sample.sh'
+sudo chmod 777 echo 'From sample.sh'
